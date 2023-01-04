@@ -1,0 +1,273 @@
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    
+    body {
+        text-align: center;
+        font-family: sans-serif;
+        background: rgb(1, 0, 5);
+
+    }
+
+.content_div{
+    margin: 100px;
+    color: #1cf739;
+    font-size:40px;
+    letter-spacing: 10px;
+}
+
+.titles{
+    font-size: 100px;
+   
+
+}
+.projects{
+    background: #1cf739;
+}
+.projects__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas:  
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 7px;
+    background-color: #1cf739;
+
+}
+
+
+
+.projects__item{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.projects__item:nth-last-of-type(1){
+grid-area: img1;
+}
+
+.projects__item:nth-last-of-type(2){
+grid-area: img2;
+}
+
+.projects__item:nth-last-of-type(3){
+grid-area: img3;
+}
+
+.projects__item:nth-last-of-type(4){
+grid-area: img4;
+}
+
+.projects__hover{
+    position: absolute;
+    background: #dc143c8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+
+}
+
+.project__item:hover .projects__hover{
+    transform: translateX(0%);
+
+}
+
+.project__icon{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.projects__title{       
+color: #101010;
+background: #1cf739;
+width: 550px;
+left: 1250px;
+font-size: 35px;
+
+
+}
+
+.subtitle{
+    font-size: 40px;
+    color: #101010;
+}
+
+
+.footer__title{
+
+    margin-bottom: 40px;
+    font-size: 170px;
+    padding: 200px 180px;
+    border-radius: 10%;
+    text-transform: uppercase;
+    text-shadow: 5px 5px #1cf739, 5px 5px ;
+    color: #f2f2f2;
+
+}
+  
+   
+
+    .footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+    color: #1cf739;
+    }
+    .footer__container-icon{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        color: #1cf739;
+        text-align: center;
+        border: 1px solid #1cf739;
+        border-radius: 50%; 
+    }
+    .footer__icons{
+        color:#1cf739;
+        font-size: 250px;
+        text-decoration: none;
+    
+    }
+    .fab.footer__icons{
+        line-height: 80px;
+    }
+.footer__container-icons{
+    color: #1cf739;
+
+}
+
+
+
+.about {
+    background: #101010;
+    height: 50px;
+}
+.price {
+    
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+    background-color: #101010;
+}
+
+.contain {
+    display: left;
+    color: #1cf739
+}
+
+.boton {
+    color: rgb(27 , 209, 97);
+   
+}
+
+.subtitle2 {
+  
+    color: aqua;
+    font-size: 60PX;
+    text-align: center;
+}
+
+
+.contact {
+    padding-top: 20px;
+    background: #101010;
+    padding-bottom: 0;
+}
+
+.foto {
+    background-color: #101010;
+    color:  rgb(27 , 209, 97);
+    text-align: left;
+    font-size: 30px;
+    
+
+}
+
+.btn-2{
+    background-color: rgb(245, 139, 218);
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 35px;
+    color: black;
+    border: 5px solid #9c27b0;
+   
+
+}
+
+.btn-home1 {
+    background:rgb(1, 0, 5);
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 35px;
+    color: black;
+    font-size: 50px;    
+}
+.linksRem{
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #1cf739;
+}
+.btn{
+    border: 1px;
+
+}
+
+.instr_conf{
+    background:rgb(1, 0, 5);
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 35px;
+    color:#1cf739;
+    font-size: 50px;    
+}
+
+.instr_conf h3{
+    font-size: 60px;
+}
+
+.instr_conf a{
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
+
